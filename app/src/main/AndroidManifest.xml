@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SongLibrary"
         tools:targetApi="31">
         <activity
+            android:name=".manageSongs"
+            android:exported="false" />
+        <activity
             android:name=".displayRecords"
             android:exported="false" />
         <activity

@@ -14,4 +14,9 @@
     <string name="opt5">5</string>
     <string name="btn1">INSERT</string>
     <string name="btn2">SHOW LIST</string>
+    <string name="btn3">UPDATE</string>
+    <string name="btn4">DELETE</string>
+    <string name="btn5">CANCEL</string>
+    <string name="btn6">SHOW ALL SONGS WITH 5 STARS</string>
+    <string name="tvid">Song ID</string>
 </resources>

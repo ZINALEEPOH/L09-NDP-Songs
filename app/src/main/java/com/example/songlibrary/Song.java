@@ -2,16 +2,17 @@ package com.example.songlibrary;
 
 import androidx.annotation.NonNull;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Song {
+public class Song implements Serializable {
     private int id;
     private String title;
     private String singers;
     private int year;
     private int stars;
 
-    public static ArrayList<Song> songs=new ArrayList<>();
+    public static ArrayList<Song> song=new ArrayList<>();
 
     public Song(int id, String title, String singers, int year, int stars) {
         this.id = id;
@@ -31,11 +32,15 @@ public class Song {
 
     public int getStars() { return stars; }
 
+    public void setId(int id){this.id=id;}
+    public void setTitle(String title){this.title=title;}
+    public void setSingers(String singers){this.singers=singers;}
+    public void setYear(int year){this.year=year;}
+    public void setStars(int stars){this.stars=stars;}
+
     @NonNull
     @Override
     public String toString() {
         return id+"\n"+title+"\n"+singers+"\n"+year+"\n"+stars;
     }
 }
-
-
